@@ -23,7 +23,8 @@ function Navbar() {
   );
 }
 const NavbarWrapper = styled.div`
-  flex: 0.2;
+  /* flex: 0.2; */
+  width: 260px;
   height: 100vh;
   background-color: white;
   overflow-y: scroll;

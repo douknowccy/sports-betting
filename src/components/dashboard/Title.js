@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useGlobalContext } from "../../context/context";
-import { SET_INPUT, SET_DEFAULT } from "../../context/action";
+
 function Title() {
   const { input, setInput, dispatch } = useGlobalContext();
 
@@ -14,7 +14,6 @@ function Title() {
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
-      <button>s</button>
     </form>
   );
 }

@@ -16,10 +16,16 @@ function DashBoard() {
   );
 }
 const DashBaordWrapper = styled.div`
-  flex: 0.6;
+  flex: 1;
   background-color: #e1e5e7;
   height: 100vh;
   overflow-y: scroll;
+  //chrome
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /*IE Edge*/
+  scrollbar-width: none; /*firefox*/
   padding: 10px 10px 10px 30px;
   .dashboard__title {
     display: flex;
